@@ -1,0 +1,65 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Navbar() {
+
+    const navigation = [
+        {
+            title: "About Us",
+            href: "#",
+        },
+        {
+            title: "Contact",
+            href: "#",
+        }
+    ]
+
+    return (
+        <header className="container mx-auto flex justify-between px-4 py-6 md:px-4 md:py-8 relative z-50">                 
+            <Link
+                href="/"
+                className="flex justify-center md:justify-start w-full md:w-auto ml-4 md:ml-0"
+                aria-label="fametonic home"
+            >
+                <Image
+                    src="/logo.png"
+                    alt="logo"
+                    width={174}
+                    height={74}
+                    priority
+                    className="h-12 md:h-[74px] w-auto"
+                />
+            </Link>
+
+            <nav className="flex items-center md:items-start">
+                <ul className="hidden md:flex space-x-10">
+                    {
+                        navigation.map((link, idx) => (
+                            <li key={idx}>
+                                <Link
+                                    href={link.href}
+                                    className="text-lg font-body font-semibold text-[#A9A9A9] hover:text-[#FFF] transition-colors whitespace-nowrap"
+                                >
+                                    {link.title}
+                                </Link>
+                            </li>
+                        ))
+                    }
+                </ul>
+
+                <div className="md:hidden">
+                    <button className="size-8 p-1 flex flex-col gap-y-1.5">
+                        {
+                            [1, 2, 3].map(el => (
+                                <span
+                                    key={el}
+                                    className="block h-[2px] w-full bg-white"
+                                />
+                            ))
+                        }
+                    </button>
+                </div>
+            </nav>
+        </header>
+    )
+}
