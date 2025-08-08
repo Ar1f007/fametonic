@@ -13,9 +13,9 @@ export default function Hero() {
     return (
         <main className="container mx-auto p-4 lg:px-6 relative lg:mt-6 min-h-[calc(100svh_-_235px)]">
             <div className="flex flex-col lg:flex-row flex-1">
-                <div className="-mt-4 lg:mt-0 relative z-0 flex-1 lg:block lg:absolute lg:-top-18 md:right-0 xl:-right-44.5">
+                <div className="relative z-0 flex-1 lg:block lg:absolute -top-15 lg:-top-21 md:right-0 xl:-right-44.5">
                     <Image
-                        src="/mobile_mock.png"
+                        src="/mock.png"
                         alt="Dashboard's view on a smartphone"
                         width={666}
                         height={679}
@@ -24,7 +24,7 @@ export default function Hero() {
                     />
                 </div>
 
-                <div>
+                <div className="-mt-21 lg:mt-0">
                     <div className="relative flex-1 z-10 lg:max-w-[65%]">
                         <h1 className="text-center lg:text-left font-heading font-extrabold lg:font-bold text-[25px] lg:text-[35px] leading-[1.3]">
                             <span className="text-white block text-balance lg:text-wrap">
