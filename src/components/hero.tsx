@@ -11,15 +11,15 @@ export default function Hero() {
     ]
 
     return (
-        <main className="container mx-auto px-6 relative flex items-center lg:h-[calc(100svh_-_250px)]">
+        <main className="container mx-auto p-4 lg:px-6 relative lg:mt-6">
             <div className="flex flex-col lg:flex-row flex-1">
-                <div className="-mt-4 lg:mt-0 relative z-0 flex-1 lg:block lg:absolute lg:top-2 md:right-0 lg:-right-23">
+                <div className="-mt-4 lg:mt-0 relative z-0 flex-1 lg:block lg:absolute lg:-top-8 md:right-0 xl:-right-23">
                     <Image
                         src="/mobile_mockup.png"
                         alt="Dashboard's view on a smartphone"
                         width={666}
                         height={679}
-                        className="object-cover w-full mx-auto"
+                        className="object-cover w-full max-w-[600px] lg:max-w-none mx-auto"
                         priority
                     />
                 </div>
@@ -30,12 +30,12 @@ export default function Hero() {
                             <span className="text-white block text-balance lg:text-wrap">
                                 Want to Turn Social Media Into a Profitable Career?
                             </span>
-                            <span className="text-[#00E7F9] text-shadow-md text-shadow-[#FC004E] block mt-2 lg:text-left text-pretty lg:text-pretty">
+                            <span className="text-secondary-light text-shadow-md text-shadow-primary block mt-2 lg:mt-0 lg:text-left text-pretty lg:text-pretty">
                                 Discover your way to success with Fametonic:
                             </span>
                         </h1>
 
-                        <ul className="space-y-3 my-8 lg:mt-6">
+                        <ul className="space-y-3 my-8 lg:mt-5">
                             {
                                 listItems.map((item, idx) => (
                                     <li key={idx} className="text-md text-left font-medium lg:font-semibold flex gap-2 items-center">
@@ -46,9 +46,9 @@ export default function Hero() {
                             }
                         </ul>
 
-                        <div className="flex flex-col pb-10 lg:pb-0">
+                        <div className="flex flex-col">
 
-                            <div className="text-[#ABABAB] font-medium text-center lg:text-left order-1 lg:order-1">
+                            <div className="text-muted font-medium text-center lg:text-left order-1 lg:order-1">
                                 <p className="mb-4 text-xs">
                                     By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
                                 </p>
@@ -58,10 +58,10 @@ export default function Hero() {
                             </div>
 
 
-                            <div className="mt-8 lg:mt-0 lg:mb-8 flex flex-col lg:w-3/5 gap-3 order-2 lg:order-0">
+                            <div className="mt-8 lg:mt-0 lg:mb-8 flex flex-col lg:w-3/5 gap-3 order-2 lg:order-0 pb-5 lg:pb-0">
                                 <Link
                                     href="#"
-                                    className="font-heading w-full bg-[#FC004E] uppercase text-center px-2 py-1.5 text-xl rounded-xl shadow-[2px_2px_10px_0_#00E7F9] shadow-[#00E7F9] font-semibold inline-flex justify-center items-center gap-2"
+                                    className="font-heading w-full bg-primary uppercase text-center px-2 py-1.5 text-xl rounded-xl shadow-[2px_2px_10px_0_#00E7F9] shadow-secondary-light font-semibold inline-flex justify-center items-center gap-2"
                                 >
                                     Get Started
                                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -15,7 +15,7 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="container mx-auto flex justify-between px-4 py-6 md:px-4 md:py-8 relative z-50">                 
+        <header className="container mx-auto flex justify-between p-4 md:py-11 md:px-6 relative z-50">                 
             <Link
                 href="/"
                 className="flex justify-center md:justify-start w-full md:w-auto ml-4 md:ml-0"
@@ -38,7 +38,7 @@ export default function Navbar() {
                             <li key={idx}>
                                 <Link
                                     href={link.href}
-                                    className="text-lg font-body font-semibold text-[#A9A9A9] hover:text-[#FFF] transition-colors whitespace-nowrap"
+                                    className="text-lg font-body font-semibold text-muted hover:text-foreground transition-colors whitespace-nowrap"
                                 >
                                     {link.title}
                                 </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
                             [1, 2, 3].map(el => (
                                 <span
                                     key={el}
-                                    className="block h-[2px] w-full bg-white"
+                                    className="block h-[2px] w-full bg-foreground"
                                 />
                             ))
                         }
