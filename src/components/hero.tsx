@@ -11,15 +11,15 @@ export default function Hero() {
     ]
 
     return (
-        <main className="container mx-auto p-4 lg:px-6 relative lg:mt-6">
+        <main className="container mx-auto p-4 lg:px-6 relative lg:mt-6 min-h-[calc(100svh_-_235px)]">
             <div className="flex flex-col lg:flex-row flex-1">
-                <div className="-mt-4 lg:mt-0 relative z-0 flex-1 lg:block lg:absolute lg:-top-8 md:right-0 xl:-right-23">
+                <div className="-mt-4 lg:mt-0 relative z-0 flex-1 lg:block lg:absolute lg:-top-18 md:right-0 xl:-right-44.5">
                     <Image
-                        src="/mobile_mockup.png"
+                        src="/mobile_mock.png"
                         alt="Dashboard's view on a smartphone"
                         width={666}
                         height={679}
-                        className="object-cover w-full max-w-[600px] lg:max-w-none mx-auto"
+                        className="object-cover w-full max-w-[500px] lg:max-w-none mx-auto"
                         priority
                     />
                 </div>
@@ -50,7 +50,7 @@ export default function Hero() {
 
                             <div className="text-muted font-medium text-center lg:text-left order-1 lg:order-1">
                                 <p className="mb-4 text-xs">
-                                    By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
+                                    By clicking &ldquo;Get Started&ldquo;, you agree with Terms and Conditions, Privacy Policy, Subscription Terms
                                 </p>
                                 <p className="text-[10px]">
                                     Fametonic {new Date().getFullYear()} &copy;All Rights Reserved.

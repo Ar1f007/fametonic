@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Figtree as Body, Urbanist as Heading } from "next/font/google";
+import { Figtree as Body, Urbanist as Heading } from "next/font/google";
 import "./globals.css";
 
 const fontBody = Body({
