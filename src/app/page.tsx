@@ -3,11 +3,14 @@ import Hero from "@/components/hero";
 import Navbar from "@/components/nav";
 
 export default function Home() {
+
+
   return (
     <div className="min-h-svh font-body">
       <Banner />
-      <Navbar />
-      <Hero />
+        <Navbar />
+        <Hero />  
     </div>
+
   );
 }
