@@ -15,7 +15,7 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="container mx-auto flex justify-between py-2 px-4 md:py-11 md:px-6 relative z-10">
+        <header className="container mx-auto flex justify-between py-3 px-4 md:py-11 md:px-6 relative z-10">
             <Link
                 href="/"
                 className="flex justify-center md:justify-start w-full md:w-auto ml-4 md:ml-0"

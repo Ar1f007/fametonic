@@ -12,13 +12,13 @@ export default function Hero() {
 
     return (
          <div className="min-h-[calc(100svh_-_136px)] md:min-h-[calc(100svh_-_300px)] container mx-auto px-2 md:px-6 lg:flex lg:items-center relative lg:overflow-x-clip 2xl:overflow-x-visible">
-          <div className="-mt-16 lg:mt-0 lg:absolute lg:right-11 xl:-right-32.5 lg:top-1/2 lg:-translate-y-1/2 lg:w-1/2 xl:w-2/3 lg:flex lg:items-center lg:h-full">
+          <div className="-mt-18 lg:mt-0 lg:absolute lg:right-11 xl:-right-32.5 lg:top-1/2 lg:-translate-y-1/2 lg:w-1/2 xl:w-2/3 lg:flex lg:items-center lg:h-full">
             <Image
-              src="/mobile.png"
+              src="/mobile-mock.png"
               alt="Dashboard's view on a smartphone"
-              width={778}
-              height={852}
-              className="w-full max-w-[670px] mx-auto object-cover lg:hidden"
+              width={333}
+              height={499}
+              className="w-full max-w-[333px] mx-auto object-cover md:hidden block"
               priority
               quality={100}
             />
@@ -28,13 +28,13 @@ export default function Hero() {
               alt="Dashboard's view on a smartphone"
               width={680}
               height={1020}
-              className="w-full mx-auto object-cover hidden lg:block"
+              className="w-full object-cover hidden md:block max-w-[680px] mx-auto"
               priority
               quality={100}
             />
           </div>
 
-          <div className="-mt-16 lg:mt-0 px-4 md:px-0 lg:max-w-[65%] relative z-10">
+          <div className="-mt-17 lg:mt-0 px-4 md:px-0 lg:max-w-[65%] relative z-10">
             <h1 className="text-center lg:text-left font-heading font-extrabold lg:font-bold text-[25px] lg:text-[35px] leading-[1.3]">
               <span className="text-white block text-balance lg:text-wrap">
                 Want to Turn Social Media Into a Profitable Career?
