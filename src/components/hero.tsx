@@ -12,7 +12,7 @@ export default function Hero() {
 
     return (
          <div className="min-h-[calc(100svh_-_136px)] md:min-h-[calc(100svh_-_300px)] container mx-auto px-2 md:px-6 lg:flex lg:items-center relative lg:overflow-x-clip 2xl:overflow-x-visible">
-          <div className="-mt-18 lg:mt-0 lg:absolute lg:right-11 xl:-right-32.5 lg:top-1/2 lg:-translate-y-1/2 lg:w-1/2 xl:w-2/3 lg:flex lg:items-center lg:h-full">
+          <div className="-mt-18 lg:mt-0 lg:absolute lg:right-11 xl:-right-30 lg:top-1/2 lg:-translate-y-1/2 lg:w-1/2 xl:w-2/3 lg:flex lg:items-center lg:h-full">
             <Image
               src="/mobile-mock.png"
               alt="Dashboard's view on a smartphone"
